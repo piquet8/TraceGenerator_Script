@@ -17,8 +17,8 @@ Download the folder or clone it wherever you want:
 ```
 https://github.com/piquet8/TraceGenerator_Script.git
 ```
-*WARNING*: the following script was tested with python version 3.10.6 other python versions may give errors or may not work.
-To check your version of python from the terminal, type:* `python3 --version`
+*WARNING*: the following script was tested with **python version 3.10.6** other python versions may give errors or may not work.
+To check your version of python from the terminal, type: `python3 --version`
 \
 \
 To launch the file from the terminal move to the folder that contains the script and type:
