@@ -40,7 +40,7 @@ extremes of the map where the execution takes place.\
 \
 ![figure2](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure2.png)\
 \
-After assigning the coordinates, you are prompted for the name of the file to convert (note, the file must be in the current folder of this script). What we receive as output is the sequence of tuples that make up the trace and the outcome of the execution.\
+After assigning the coordinates, you are prompted for the name of the file to convert (note, the file must be in the current folder of this script). What we receive as output is the sequence of tuples that make up the trace and the outcome of the execution.The trace just found will be present in the folder containing this script with the name trace_s.json or trace_f.json\
 \
 ![figure3](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure3.png)\
 \
