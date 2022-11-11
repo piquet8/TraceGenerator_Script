@@ -31,3 +31,16 @@ python3 traceGenerator.py
 A folder containing log files has been provided as an example in this repository: [log_files_example](https://github.com/piquet8/TraceGenerator_Script/tree/main/log_files_example)\
 In the next screens we see how the algorithm works by referring to the file given as an example.
 When the script is launched you are asked which of the 3 functions you want to use:
+![figure1](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure1.png)
+By selecting the first option we choose to convert a log file to the corresponding track. Before doing this we are prompted to set the coordinates related to the extremes of the map where the execution takes place. 
+![figure2](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure2.png)
+After assigning the coordinates, you are prompted for the name of the file to convert (note, the file must be in the current folder of this script)
+![figure3](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure3.png)
+What we receive as output is the sequence of t-uples that make up the trace and the outcome of the execution.
+![figure4](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure4.png)
+By selecting the second function instead we convert a folder of log files to a folder of tracks. Again, it is necessary initially to provide the coordinates of the extremes of the map used in the executions.
+![figure5](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure5.png)
+Once the coordinates are set, we need to provide the path to the folders we want to convert.
+![figure6](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure6.png)
+Finally with the third function we give as input a folder containing the traces and get as output a sample containing all positive traces followed by all negative traces. 
+![figure7](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure7.png)
