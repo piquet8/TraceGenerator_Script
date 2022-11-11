@@ -35,7 +35,6 @@ When the script is launched you are asked which of the 3 functions you want to u
 ![figure1](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure1.png)\
 \
 By selecting the first option we choose to convert a log file to the corresponding track. Before doing this we are prompted to set the coordinates related to the \
-\
 extremes of the map where the execution takes place. \
 \
 ![figure2](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure2.png)\
