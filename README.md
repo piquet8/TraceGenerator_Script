@@ -35,7 +35,7 @@ When the script is launched you are asked which of the 3 functions you want to u
 \
 ![figure1](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure1.png)\
 \
-By selecting the first option we choose to convert a log file to the corresponding track. Before doing this we are prompted to set the coordinates related to the
+By selecting the first option we choose to convert a log file to the corresponding trace. Before doing this we are prompted to set the coordinates related to the
 extremes of the map where the execution takes place. \
 \
 ![figure2](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure2.png)\
@@ -48,7 +48,7 @@ What we receive as output is the sequence of t-uples that make up the trace and 
 \
 ![figure4](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure4.png)\
 \
-By selecting the second function instead we convert a folder of log files to a folder of tracks. Again, it is necessary initially to provide the coordinates of the extremes of the map used in the executions.\
+By selecting the second function instead we convert a folder of log files to a folder of traces. Again, it is necessary initially to provide the coordinates of the extremes of the map used in the executions.\
 \
 ![figure5](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure5.png)\
 \
