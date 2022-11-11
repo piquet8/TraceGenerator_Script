@@ -1,7 +1,7 @@
 # TraceGenerator_Script
 This script provides a tool that can be used to create Boolean traces and trace samples from the log files of different executions. 
 - Define **log file** as a set of information (in the form of messages exchanged by the components of a system) representing the change in certain parameters during the execution of that system. 
-- Define **trace** as a sequence of t-uples containing Boolean values that can change from one t-uple to the next.
+- Define **trace** as a sequence of tuples containing Boolean values that can change from one t-uple to the next.
 - Define **sample** as the set of all positive and negative traces (first all positive then all negative traces)  
 
 The algorithm offers three modes of operation:
