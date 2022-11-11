@@ -262,11 +262,11 @@ try:
 
 		if fail == 0 and reached == 1:
 			print("SUCCESS")
-			with open('trace'+val+'_s.json', "w") as outfile:
+			with open('trace_s.json', "w") as outfile:
 	 			json.dump(trace, outfile)
 		elif fail == 1 or reached == 0:
 			print("FAILURE")
-			with open('trace'+val+'_f.json', "w") as outfile:
+			with open('trace_f.json', "w") as outfile:
 	 			json.dump(trace, outfile)
 
 ################################################ json trace folder generation ###########################################################################################
