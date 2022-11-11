@@ -30,6 +30,7 @@ python3 traceGenerator.py
 ## How to use
 A folder containing log files has been provided as an example in this repository: [log_files_example](https://github.com/piquet8/TraceGenerator_Script/tree/main/log_files_example)\
 In the next screens we see how the algorithm works by referring to the file given as an example.
+\
 When the script is launched you are asked which of the 3 functions you want to use:\
 \
 ![figure1](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure1.png)\
