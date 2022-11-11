@@ -36,26 +36,26 @@ When the script is launched you are asked which of the 3 functions you want to u
 ![figure1](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure1.png)\
 \
 By selecting the first option we choose to convert a log file to the corresponding trace. Before doing this we are prompted to set the coordinates related to the
-extremes of the map where the execution takes place. \
+extremes of the map where the execution takes place.\
 \
 ![figure2](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure2.png)\
 \
-After assigning the coordinates, you are prompted for the name of the file to convert (note, the file must be in the current folder of this script)\
+After assigning the coordinates, you are prompted for the name of the file to convert (note, the file must be in the current folder of this script). What we receive as output is the sequence of tuples that make up the trace and the outcome of the execution.\
 \
 ![figure3](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure3.png)\
 \
-What we receive as output is the sequence of t-uples that make up the trace and the outcome of the execution.\
+By selecting the second function instead we convert a folder of log files to a folder of traces. Again, it is necessary initially to provide the coordinates of the extremes of the map used in the executions.\
 \
 ![figure4](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure4.png)\
 \
-By selecting the second function instead we convert a folder of log files to a folder of traces. Again, it is necessary initially to provide the coordinates of the extremes of the map used in the executions.\
+Once the coordinates are set, we need to provide the path to the folders we want to convert. In the folder where the script is contained we will now find a new folder named 'json_trace_folder' containing all the new traces. From the terminal you can also see a report on the traces found. \
 \
 ![figure5](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure5.png)\
 \
-Once the coordinates are set, we need to provide the path to the folders we want to convert.\
+Finally with the third function we give as input a folder containing the traces and get as output a sample containing all positive traces followed by all negative traces. \
 \
 ![figure6](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure6.png)\
 \
-Finally with the third function we give as input a folder containing the traces and get as output a sample containing all positive traces followed by all negative traces. \
+We need to provide the path to the folder containing the tracks. The algorithm processes the sample and produces it with the name 'sample.json' in the folder where this script is located.\
 \
 ![figure7](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure7.png)
