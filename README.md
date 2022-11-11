@@ -17,7 +17,11 @@ Download the folder or clone it wherever you want:
 ```
 https://github.com/piquet8/TraceGenerator_Script.git
 ```
-To launch the file from the terminal move to the folder that contains the script and type
+*WARNING*: the following script was tested with python version 3.10.6 other python versions may give errors or may not work.
+To check your version of python from the terminal, type:* `python3 --version`
+\
+\
+To launch the file from the terminal move to the folder that contains the script and type:
 ```
 python3 traceGenerator.py 
 ```
@@ -26,3 +30,4 @@ python3 traceGenerator.py
 ## How to use
 A folder containing log files has been provided as an example in this repository: [log_files_example](https://github.com/piquet8/TraceGenerator_Script/tree/main/log_files_example)\
 In the next screens we see how the algorithm works by referring to the file given as an example.
+When the script is launched you are asked which of the 3 functions you want to use:
