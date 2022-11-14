@@ -56,6 +56,11 @@ Finally with the third function we give as input a folder containing the traces 
 \
 ![figure6](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure6.png)\
 \
-We need to provide the path to the folder containing the tracks. The algorithm processes the sample and produces it with the name 'sample.json' in the folder where this script is located.\
+We need to provide the path to the folder containing the traces. The algorithm processes the sample and produces it with the name 'sample.json' in the folder where this script is located.\
 \
 ![figure7](https://github.com/piquet8/TraceGenerator_Script/blob/main/media/figure7.png)
+
+# Authors and contacts
+AUTHOR: Gianluca Piquet
+
+CONTACT: gianlucapiquet8@gmail.com 
