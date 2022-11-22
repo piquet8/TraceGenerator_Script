@@ -94,7 +94,6 @@ try:
 						nex_1 = next(file_iterator)
 						bat_level = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 						if bat_level != []:
-	 						#print('\n- start_battery_state -')
 	 						bat_level= bat_level[0]
 	 						min_bat = 0
 	 						max_bat = 101
@@ -113,14 +112,9 @@ try:
 	 					if rob_pose != []:
 	 						x_pose = rob_pose[0]
 	 						y_pose = rob_pose[1]
-	 						
-
 	 						x_bin = bin_convert(x_pose, a0, a1, n)
 	 						y_bin = bin_convert(y_pose, b0, b1, n)
 	 						x3_x4_x5_x6_x7_x8_x9_x10 = x_bin + y_bin
-
-	 						#print('\n- start_position_state: -')
-	 						#print(x3_x4_x5_x6_x7_x8_x9_x10)
 	 						init_pos_found = True
 	 						count=count+1
 
@@ -134,8 +128,6 @@ try:
 	 						else:
 	 							grasp_var = False
 	 						x11 = [grasp_var]
-	 						#print('\n- start_grasp_state: -')
-	 						#print(x11)
 	 						init_gra_found = True
 	 						count=count+1
 
@@ -156,8 +148,6 @@ try:
 	 					nex_1 = next(file_iterator)
 	 					bat_level = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 	 					if bat_level != []:
-	 						#print('\n- New Battery Message -')
-	 						#print(bat_level)
 	 						bat_level=bat_level[0]
 	 						if bat_level<10:
 	 							fail = 1
@@ -189,8 +179,6 @@ try:
 	 						if check_pose == 1:
 	 							p1 = (x_pose,y_pose)
 	 							p2 = (kx_pose, ky_pose)
-	 							#print(p1)
-	 							#print(p2)
 	 							dist = math.dist(p1,p2)
 	 							if dist < 0.25:
 	 								reached = 1
@@ -201,10 +189,8 @@ try:
 	 						# update the trace adding new tupla
 	 					
 	 						if x3_x4_x5_x6_x7_x8_x9_x10 != n_upla[1]:
-	 							#print('\n**update position**')
 	 							n_upla[1] = x3_x4_x5_x6_x7_x8_x9_x10
 	 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-	 							#print(tupla)
 	 							trace.append(tupla)
 	 						else:
 	 							continue
@@ -216,7 +202,6 @@ try:
 	 					nex_1 = next(file_iterator)
 	 					grasp = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 	 					if grasp != []: 
-	 						#print('\n- New Grasp Message -')
 	 						if grasp == [27503.0] or grasp == [1.0]:
 	 							grasp_var = True
 	 						else:
@@ -226,10 +211,8 @@ try:
 	 						# update the trace adding new tupla
 	 						
 	 						if x11 != n_upla[2]:						
-	 							#print('\n**update grasp**')
 	 							n_upla[2] = x11
 	 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-	 							#print(tupla)
 	 							trace.append(tupla)
 	 						else:
 	 							continue
@@ -244,7 +227,6 @@ try:
 	 								check_pose = 1
 	 								kx_pose = k_pose[0]
 	 								ky_pose = k_pose[1]
-			 						#print(kx_pose, ky_pose)
 			 			else:
 			 				continue
 
@@ -284,9 +266,7 @@ try:
 
 		files = os.listdir(log_path)
 		for file in files:
-			#print(file)
 			count_ = count_+1
-			#print(path+"/"+file)
 			file_name=Path(log_path+"/"+file)
 
 # initialize the trace with the zero tuple
@@ -299,13 +279,11 @@ try:
 							nex_1 = next(file_iterator)
 							bat_level = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 							if bat_level != []:
-		 						#print('\n- start_battery_state -')
 		 						bat_level= bat_level[0]
 		 						min_bat = 0
 		 						max_bat = 101
 		 						n_bit = 3 
 		 						x0_x1_x2 = bin_convert(bat_level, min_bat, max_bat, n_bit)
-		 						#print(x0_x1_x2)
 		 						init_bat_found = True
 		 						count=count+1
 
@@ -317,15 +295,10 @@ try:
 
 		 					if rob_pose != []:
 		 						x_pose = rob_pose[0]
-		 						y_pose = rob_pose[1]
-		 						
-
+		 						y_pose = rob_pose[1]		 					
 		 						x_bin = bin_convert(x_pose, a0, a1, n)
 		 						y_bin = bin_convert(y_pose, b0, b1, n)
 		 						x3_x4_x5_x6_x7_x8_x9_x10 = x_bin + y_bin
-
-		 						#print('\n- start_position_state: -')
-		 						#print(x3_x4_x5_x6_x7_x8_x9_x10)
 		 						init_pos_found = True
 		 						count=count+1
 
@@ -339,15 +312,12 @@ try:
 		 						else:
 		 							grasp_var = False
 		 						x11 = [grasp_var]
-		 						#print('\n- start_grasp_state: -')
-		 						#print(x11)
 		 						init_gra_found = True
 		 						count=count+1
 
 			zero_tupla = x0_x1_x2 + x3_x4_x5_x6_x7_x8_x9_x10 + x11
 			trace.append(zero_tupla)
 			n_upla = [x0_x1_x2,x3_x4_x5_x6_x7_x8_x9_x10,x11]
-			#print(n_upla)
 			init_gra_found = False
 			init_bat_found = False
 			init_pos_found = False
@@ -366,8 +336,6 @@ try:
 		 					nex_1 = next(file_iterator)
 		 					bat_level = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 		 					if bat_level != []:
-		 						#print('\n- New Battery Message -')
-		 						#print(bat_level)
 		 						bat_level=bat_level[0]
 		 						if bat_level<10:
 		 							fail = 1
@@ -379,10 +347,8 @@ try:
 		 						# update the trace adding new tupla 
 
 		 						if x0_x1_x2 != n_upla[0]:
-		 							#print('\n**update battery**')
 		 							n_upla[0] = x0_x1_x2
 		 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-		 							#print(tupla)
 		 							trace.append(tupla)
 		 						else: 
 		 							continue
@@ -395,16 +361,11 @@ try:
 		 					rob_pose = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 		 					if rob_pose != []:
 		 						x_pose = rob_pose[0]
-		 						y_pose = rob_pose[1]
-		 						#print("position", x_pose, y_pose)
-		 						
+		 						y_pose = rob_pose[1]		 						
 		 						if check_pose == 1:
 		 							p1 = (x_pose,y_pose)
 		 							p2 = (kx_pose, ky_pose)
-		 							#print(p1)
-		 							#print(p2)
 		 							dist = math.dist(p1,p2)
-		 							#print(dist)
 		 							if dist < 0.35:
 		 								reached = 1
 
@@ -415,10 +376,8 @@ try:
 		 						# update the trace adding new tupla
 		 					
 		 						if x3_x4_x5_x6_x7_x8_x9_x10 != n_upla[1]:
-		 							#print('\n**update position**')
 		 							n_upla[1] = x3_x4_x5_x6_x7_x8_x9_x10
 		 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-		 							#print(tupla)
 		 							trace.append(tupla)
 		 						else:
 		 							continue
@@ -430,7 +389,6 @@ try:
 		 					nex_1 = next(file_iterator)
 		 					grasp = [float(s) for s in re.findall(r'-?\d+\.?\d*', nex_1)]
 		 					if grasp != []: 
-		 						#print('\n- New Grasp Message -')
 		 						if grasp == [27503.0] or grasp == [1.0]:
 		 							grasp_var = True
 		 						else:
@@ -440,10 +398,8 @@ try:
 		 						# update the trace adding new tupla
 		 						
 		 						if x11 != n_upla[2]:						
-		 							#print('\n**update grasp**')
 		 							n_upla[2] = x11
 		 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-		 							#print("GRASP")
 		 							trace.append(tupla)
 		 						else:
 		 							continue
@@ -458,16 +414,11 @@ try:
 		 								check_pose = 1
 		 								kx_pose = k_pose[0]
 		 								ky_pose = k_pose[1]
-				 						#print(kx_pose, ky_pose)
 				 			else:
 				 				continue
 
 		 			elif(fail == 1):
 		 				break
-
-		#print('\nTrace:\n')
-		#	print(len(trace))
-		#print(trace)
 
 	# save the trace as a json file, if the robot reached the kitchen the task is complete and the trace will be indicate ad trace_s 
 	# instead if for some reason the robot don't reach the kicthen the trace is indicate ad trace_f 
