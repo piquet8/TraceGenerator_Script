@@ -159,10 +159,8 @@ try:
 	 						# update the trace adding new tupla 
 
 	 						if x0_x1_x2 != n_upla[0]:
-	 							#print('\n**update battery**')
 	 							n_upla[0] = x0_x1_x2
 	 							tupla=n_upla[0]+n_upla[1]+n_upla[2]
-	 							#print(tupla)
 	 							trace.append(tupla)
 	 						else: 
 	 							continue
