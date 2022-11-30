@@ -12,6 +12,26 @@ takes a folder containing multiple log files and returns a folder containing all
 - **TRACES FOLDER ⟶ SAMPLE**\
 takes a folder containing all traces and returns a sample
 
+## Cordinate of map extremes
+Using the first two functions of the tool, you are prompted to enter coordinates related to the map of the experiments that took place. Below are the map coordinates related to the different experiments:
+- For the RAL2022-experiments simulation the parameters are:
+  - x0 = -15.5
+  - x1 = 6.5
+  - y0 = -10.8
+  - y1 = 16.8
+
+- For the tour-guide-robot simulation, the parameters are:
+  - x0 = -3.4
+  - x1 = 64
+  - y0 = -19.2
+  - y1 = 16.9
+
+- For the R1 experiments in arena, the parameters are:
+  -	x0 = -5.6
+  -	x1 = 6.6
+  -	y0 = -5
+  -	y1 = 8.6
+
 ## How to launch
 Download the folder or clone it wherever you want:
 ```
