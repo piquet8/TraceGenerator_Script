@@ -31,6 +31,8 @@ Using the first two functions of the tool, you are prompted to enter coordinates
   -	x1 = 6.6
   -	y0 = -5
   -	y1 = 8.6
+  -	
+*(In R1 experiments may be necessary to change the distance threshold from 0.35 to 0.5 in line 408 because the final position of the robot is less precise)*
 
 ## How to launch
 Download the folder or clone it wherever you want:
